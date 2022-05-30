@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body > h1 {
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+
+.container {
+  background: white;
+  width: 50%;
+  border: 2px solid black;
+  border-radius: 1rem;
+  padding: 1rem 0.5rem;
+}
+
+.container .form .newItem {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+.container .form .newItem input {
+  padding: 0.5rem;
+  border: 1px solid grey;
+  width: 40%;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.container button {
+  background: green;
+  padding: 0.6rem;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.container #data {
+  list-style: none;
+  padding: 0 1rem;
+}
+
+.container #data li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-bottom: 1px solid grey;
+}
+
+.container #data li div {
+
+  width: calc((100% / 12) * 4);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.container #data li div:last-child {
+
+  width: calc((100% / 12) * 2);
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.counter div {
+  margin: 0 5px;
+}
+
+.container #data li button {
+
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+
+.container #data li button#delete {
+  border-radius: 0;
+  font-size: 1.2rem;
+}
+
+#minus {
+  background: lightsalmon;
+}
+
+#plus {
+  background: rgb(45, 194, 45);
+}
+
+#delete {
+  background: red;
+}
+
+#empty, #loading {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
